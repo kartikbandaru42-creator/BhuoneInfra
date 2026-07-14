@@ -1,1 +1,466 @@
 
+/* ===========================
+   GOOGLE FONT
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#f8f8f8;
+    color:#222;
+    overflow-x:hidden;
+}
+
+img{
+    width:100%;
+    display:block;
+}
+
+a{
+    text-decoration:none;
+}
+
+ul{
+    list-style:none;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+/* ===========================
+   HEADER
+=========================== */
+
+header{
+    position:fixed;
+    width:100%;
+    top:0;
+    left:0;
+    z-index:999;
+    background:rgba(0,0,0,.35);
+    backdrop-filter:blur(12px);
+}
+
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 0;
+}
+
+.logo h2{
+    color:#fff;
+    font-size:30px;
+    font-weight:700;
+}
+
+.logo span{
+    color:#D4AF37;
+}
+
+nav ul{
+    display:flex;
+    gap:35px;
+}
+
+nav a{
+    color:#fff;
+    font-weight:500;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#D4AF37;
+}
+
+.nav-btn{
+    background:#D4AF37;
+    color:#fff;
+    padding:12px 28px;
+    border-radius:50px;
+    transition:.3s;
+}
+
+.nav-btn:hover{
+    background:#0f5132;
+}
+
+/* ===========================
+   HERO
+=========================== */
+
+.hero{
+    height:100vh;
+    background:url("../images/hero.jpg") center center/cover no-repeat;
+    position:relative;
+    display:flex;
+    align-items:center;
+}
+
+.overlay{
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,.45);
+}
+
+.hero-content{
+    position:relative;
+    color:#fff;
+    width:650px;
+    margin-left:8%;
+}
+
+.hero h4{
+    color:#D4AF37;
+    letter-spacing:2px;
+    margin-bottom:20px;
+}
+
+.hero h1{
+    font-size:70px;
+    line-height:1.1;
+    margin-bottom:25px;
+}
+
+.hero p{
+    font-size:20px;
+    line-height:1.8;
+    margin-bottom:35px;
+}
+
+.hero-buttons{
+    display:flex;
+    gap:20px;
+}
+
+.btn{
+    background:#D4AF37;
+    color:#fff;
+    padding:15px 40px;
+    border-radius:50px;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#0f5132;
+}
+
+.btn2{
+    border:2px solid #fff;
+    color:#fff;
+    padding:15px 40px;
+    border-radius:50px;
+    transition:.3s;
+}
+
+.btn2:hover{
+    background:#fff;
+    color:#000;
+}
+
+/* ===========================
+ABOUT
+=========================== */
+
+.about{
+    padding:120px 0;
+}
+
+.about-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:70px;
+    align-items:center;
+}
+
+.about img{
+    border-radius:20px;
+}
+
+.about h5{
+    color:#D4AF37;
+    margin-bottom:15px;
+}
+
+.about h2{
+    font-size:42px;
+    margin-bottom:25px;
+}
+
+.about p{
+    line-height:1.9;
+    color:#666;
+}
+
+.points{
+    margin-top:35px;
+}
+
+.points div{
+    margin-bottom:18px;
+    font-size:18px;
+}
+
+.points i{
+    color:#0f5132;
+    margin-right:10px;
+}
+
+/* ===========================
+WHY
+=========================== */
+
+.why{
+    background:#fff;
+    padding:120px 0;
+    text-align:center;
+}
+
+.why h5{
+    color:#D4AF37;
+}
+
+.why h2{
+    margin:15px 0 60px;
+    font-size:42px;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:30px;
+}
+
+.card{
+    background:#fff;
+    padding:40px 25px;
+    border-radius:15px;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card i{
+    font-size:45px;
+    color:#D4AF37;
+    margin-bottom:20px;
+}
+
+.card h3{
+    margin-bottom:15px;
+}
+
+/* ===========================
+PROJECTS
+=========================== */
+
+.projects{
+    padding:120px 0;
+}
+
+.projects h5{
+    color:#D4AF37;
+    text-align:center;
+}
+
+.projects h2{
+    text-align:center;
+    font-size:42px;
+    margin:15px 0 60px;
+}
+
+.project-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+}
+
+.project{
+    background:#fff;
+    border-radius:18px;
+    overflow:hidden;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
+
+.project img{
+    height:260px;
+    object-fit:cover;
+}
+
+.project-content{
+    padding:25px;
+}
+
+.project-content h3{
+    margin-bottom:10px;
+}
+
+.project-content a{
+    color:#0f5132;
+    font-weight:600;
+}
+
+/* ===========================
+CTA
+=========================== */
+
+.cta{
+    padding:100px 0;
+    background:#0f5132;
+    color:#fff;
+    text-align:center;
+}
+
+.cta h2{
+    font-size:48px;
+    margin-bottom:20px;
+}
+
+.cta p{
+    margin-bottom:35px;
+}
+
+/* ===========================
+CONTACT
+=========================== */
+
+.contact{
+    padding:120px 0;
+}
+
+.contact-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:60px;
+}
+
+.contact h5{
+    color:#D4AF37;
+}
+
+.contact h2{
+    margin:20px 0;
+    font-size:42px;
+}
+
+.contact p{
+    margin-bottom:15px;
+}
+
+form{
+    display:flex;
+    flex-direction:column;
+}
+
+input,
+textarea{
+    padding:18px;
+    margin-bottom:20px;
+    border:1px solid #ddd;
+    border-radius:10px;
+    outline:none;
+    font-size:16px;
+}
+
+textarea{
+    height:170px;
+}
+
+button{
+    border:none;
+    cursor:pointer;
+    font-size:18px;
+}
+
+/* ===========================
+FOOTER
+=========================== */
+
+footer{
+    background:#111;
+    color:#fff;
+    padding:35px 0;
+    text-align:center;
+}
+
+/* ===========================
+WHATSAPP
+=========================== */
+
+.whatsapp{
+    position:fixed;
+    right:25px;
+    bottom:25px;
+    width:60px;
+    height:60px;
+    border-radius:50%;
+    background:#25D366;
+    color:#fff;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:30px;
+    z-index:999;
+}
+
+/* ===========================
+RESPONSIVE
+=========================== */
+
+@media(max-width:992px){
+
+.navbar{
+    flex-direction:column;
+    gap:20px;
+}
+
+nav ul{
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.about-grid,
+.contact-grid,
+.project-grid,
+.cards{
+    grid-template-columns:1fr;
+}
+
+.hero-content{
+    width:90%;
+    margin:auto;
+    text-align:center;
+}
+
+.hero-buttons{
+    justify-content:center;
+}
+
+.hero h1{
+    font-size:48px;
+}
+
+.about h2,
+.projects h2,
+.why h2,
+.contact h2,
+.cta h2{
+    font-size:34px;
+}
+
+}
